@@ -1,5 +1,7 @@
 Local Knowledge Graph RAG for Enterprise Data
 
+-- I am jsut trying making some changes here in this file. --
+
 A local Retrieval-Augmented Generation (RAG) engineering project that combines knowledge-graph retrieval with vector search. It is designed to explore questions that require entity relationships, multi-hop traversal, aggregation, or document-grounded facts.
 
 The project demonstrates how graph retrieval can complement vector-only retrieval. It is a portfolio and architecture-validation project, not a production deployment. LLM inference and embeddings use Ollama; PostgreSQL with pgvector and Neo4j provide the vector and graph stores. No paid LLM API is required.
