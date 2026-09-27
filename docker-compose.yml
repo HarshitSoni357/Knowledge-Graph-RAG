@@ -1,0 +1,43 @@
+services:
+
+  neo4j:
+    image: neo4j:5-community
+    container_name: kg-rag-neo4j
+    restart: unless-stopped
+
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+
+    environment:
+      NEO4J_AUTH: neo4j/kg_rag_dev_password
+
+      # Keep memory conservative for an 8 GB machine
+      NEO4J_server_memory_heap_initial__size: 256m
+      NEO4J_server_memory_heap_max__size: 512m
+      NEO4J_server_memory_pagecache_size: 256m
+
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: kg-rag-postgres
+    restart: unless-stopped
+
+    ports:
+      - "5432:5432"
+
+    environment:
+      POSTGRES_USER: kg_rag
+      POSTGRES_PASSWORD: kg_rag_dev_password
+      POSTGRES_DB: kg_rag
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  neo4j_data:
+  neo4j_logs:
+  postgres_data:

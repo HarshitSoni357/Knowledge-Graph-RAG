@@ -1,0 +1,92 @@
+[
+  {
+    "id": "q01",
+    "question": "Who is the CEO of Microsoft?",
+    "category": "single_hop",
+    "expected_answer": "Satya Nadella"
+  },
+  {
+    "id": "q02",
+    "question": "Who acquired Activision Blizzard?",
+    "category": "single_hop",
+    "expected_answer": "Microsoft"
+  },
+  {
+    "id": "q03",
+    "question": "Who owns Blizzard?",
+    "category": "single_hop",
+    "expected_answer": "Activision Blizzard"
+  },
+  {
+    "id": "q04",
+    "question": "Which platform is produced by Microsoft?",
+    "category": "single_hop",
+    "expected_answer": "Azure"
+  },
+  {
+    "id": "q05",
+    "question": "Where is Microsoft located?",
+    "category": "single_hop",
+    "expected_answer": "Redmond, Washington"
+  },
+  {
+    "id": "q06",
+    "question": "Which company acquired the company that owns Blizzard?",
+    "category": "two_hop",
+    "expected_answer": "Microsoft"
+  },
+  {
+    "id": "q07",
+    "question": "What companies does Activision Blizzard own?",
+    "category": "two_hop",
+    "expected_answer": "Activision, Blizzard, King"
+  },
+  {
+    "id": "q08",
+    "question": "Which platform is part of Microsoft Cloud?",
+    "category": "two_hop",
+    "expected_answer": "Azure"
+  },
+  {
+    "id": "q09",
+    "question": "Which Microsoft business segment contains Azure?",
+    "category": "two_hop",
+    "expected_answer": "Intelligent Cloud"
+  },
+  {
+    "id": "q10",
+    "question": "Who leads the company that acquired Activision Blizzard?",
+    "category": "three_hop",
+    "expected_answer": "Satya Nadella"
+  },
+  {
+    "id": "q11",
+    "question": "What company acquired the owner of Activision?",
+    "category": "three_hop",
+    "expected_answer": "Microsoft"
+  },
+  {
+    "id": "q12",
+    "question": "How many companies does Activision Blizzard own?",
+    "category": "aggregation",
+    "expected_answer": "3"
+  },
+  {
+    "id": "q13",
+    "question": "What are Microsoft's three major business areas?",
+    "category": "aggregation",
+    "expected_answer": "3"
+  },
+  {
+    "id": "q14",
+    "question": "What is Microsoft's stock price today?",
+    "category": "out_of_scope",
+    "expected_answer": "Not available in corpus."
+  },
+  {
+    "id": "q15",
+    "question": "What was Microsoft's FY2025 revenue?",
+    "category": "out_of_scope",
+    "expected_answer": "Not available in corpus."
+  }
+]
